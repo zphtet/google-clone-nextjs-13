@@ -10,12 +10,9 @@ const HomeSearch = () => {
   const inputRef = useRef("");
   const router = useRouter();
   const searchHandler = (e) => {
-    // console.dir(e.target);
     e.preventDefault();
-
     const searchTerm = inputRef.current?.value;
     if (!searchTerm.trim()) return;
-    console.log(searchTerm);
     router.push(`/search/all?s=${searchTerm}`);
   };
 

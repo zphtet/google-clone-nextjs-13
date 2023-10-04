@@ -1,6 +1,7 @@
 const fetchData = async (searchTerm, type = "all", start = 0) => {
   const searchType = type === "all" ? "search" : "imagesearch";
-  const url = `https://google-search72.p.rapidapi.com/${searchType}?q=${searchTerm}&num=12&start=${start}`;
+  const startNum = Number(start) * 12 || 0;
+  const url = `https://google-search72.p.rapidapi.com/${searchType}?q=${searchTerm}&num=12&start=${startNum}`;
   const options = {
     method: "GET",
     headers: {

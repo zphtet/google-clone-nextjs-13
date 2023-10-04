@@ -18,7 +18,7 @@ const Pagination = () => {
   };
   const btnDisabled = start <= 0;
   return (
-    <div className=" flex gap-5 border border-blue-600 justify-end p-5">
+    <div className=" flex gap-5  justify-end p-5">
       {
         <button
           onClick={PrevPagiHandler}
