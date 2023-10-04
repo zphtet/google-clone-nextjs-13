@@ -7,9 +7,6 @@ const Pagination = () => {
   const searchTerm = param.get("s");
   const start = +param.get("start");
   const router = useRouter();
-
-  console.log("pagination rendering");
-  console.log(searchTerm, "search term");
   const NextPagiHandler = () => {
     router.push(`${pathname}?s=${searchTerm}&start=${start + 1}`);
   };

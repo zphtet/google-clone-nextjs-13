@@ -5,7 +5,7 @@ const fetchData = async (searchTerm, type = "all", start = 0) => {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "5fbe532038msh2fa574a6d4b43d4p1a7397jsnc482df7338df",
+      "X-RapidAPI-Key": process.env.RAPID_API_KEY,
       "X-RapidAPI-Host": "google-search72.p.rapidapi.com",
     },
   };
